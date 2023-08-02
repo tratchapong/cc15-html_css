@@ -1,0 +1,33 @@
+.card {
+    // image
+    &__image {
+      display: block;
+    }
+    // description
+    &__description {
+      display: block;
+    }
+    // button
+    &__button {
+      &--submit {
+        display: inline-block;
+      }
+      &--cancel {
+        display: inline-block;
+      }
+    }
+  }
+
+//   compile to CSS
+  .card__image {
+    display: block;
+  }
+  .card__description {
+    display: block;
+  }
+  .card__button--submit {
+    display: inline-block;
+  }
+  .card__button--cancel {
+    display: inline-block;
+  }

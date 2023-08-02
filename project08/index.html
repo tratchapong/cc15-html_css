@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selector</title>
+    <style>
+     * {
+        box-sizing: border-box;
+        /* margin: 0;
+        padding: 0; */
+     }
+      h1 {
+        font-size: 20px;
+      }
+      h1:hover {
+        font-size: 40px;
+        
+      }
+      .headline {
+        color: red;
+      }
+      #para1 {
+        color: coral;
+        background-color: yellow;
+      }
+      .bg-blue {
+        background-color: aqua;
+      }
+      
+      input[type=text] {
+        background-color: blueviolet;
+      }
+      input[placeholder^=user] {
+        padding: 20px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <main>
+        <form >
+            <input type="text" placeholder="username">
+            <input type="text" placeholder="info">
+
+        </form>
+      <h1 class="headline bg-blue">Codecamp 15</h1>
+      <p class="bg-blue" id="para1">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis,
+        dolorem reiciendis! Ducimus eum velit nobis omnis obcaecati saepe ut
+        voluptate iste cum natus, nostrum commodi aperiam eligendi qui laborum
+        sed!
+      </p>
+      <p class="headline">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit
+        cupiditate magni est voluptatum libero. Libero officiis, praesentium
+        illum enim esse tempora vero magnam non, laboriosam voluptatem sint
+        repellendus, consequuntur ea.
+      </p>
+    </main>
+  </body>
+</html>

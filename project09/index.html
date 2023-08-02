@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        main {
+            outline: dashed lime;
+            height: 600px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            /* flex-direction: column-reverse; */
+            gap: 12px;
+            /* flex-direction: column; */
+            /* flex-wrap: wrap; */
+        }
+        h2 {
+            background-color: red;
+            border: solid blue;
+            padding: 4px;
+            flex-basis: 100px;
+            flex-shrink: 0;     
+        }
+        .item3 {
+            flex-grow: 2;                             
+            flex-shrink: 0;
+            align-self: flex-end;
+        }
+        .item4 {
+            flex-grow: 1;
+            flex-shrink: 1;
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h2>Code1</h2>
+        <h2>Code2</h2>
+        <h2 class="item3">Code3</h2>
+        <h2 class="item4">Code4</h2>
+        <h2>Code5</h2>       
+    </main>
+</body>
+</html>

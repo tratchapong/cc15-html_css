@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position : inset</title>
+    <style>
+        .container {
+            position: relative;
+            width: 500px;
+            height: 400px;
+            background-color: red;
+            margin: 20vh auto;
+        }
+        .inset {
+            position: absolute;
+            top: 25%;
+            bottom: 25%;
+            left: 25%;
+            right: 25%;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inset">
+            <h1>Codecamp</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, autem!</p>
+        </div>
+    </div>
+</body>
+</html>

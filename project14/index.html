@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive : mobile first</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        a {
+            text-decoration: none;
+            color: darkblue;
+            display: block;
+            padding: 8px;
+        }
+        nav {
+            background-color: silver;
+            display: flex;
+            flex-direction: column;
+            gap:1px;
+            font-size: 2rem;
+        }
+        h1 {
+            display : none;
+        }
+        @media (min-width: 1000px) {
+            nav {
+                flex-direction: row;
+                justify-content: space-around;
+            }
+            h1 {
+                display : block;
+            }
+
+        }
+        @media (min-width: 1200px) {
+            nav {
+                justify-content: flex-end;
+                font-size: 2.5rem;
+            }
+            h1 {
+                background-color: blue;
+                color: white;
+            }
+            
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact Us</a>
+    </nav>
+    <main>
+        <h1>Codecamp 15</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium placeat est eum quidem reprehenderit, odit nesciunt rerum commodi repudiandae omnis itaque perspiciatis animi provident ab vel similique molestiae, totam vero.</p>
+    </main>
+</body>
+</html>

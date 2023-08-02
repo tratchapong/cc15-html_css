@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS center by position & transform</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        main {
+            height: 100vh;
+            position: relative;
+            background-color: violet;
+        }
+        .center {
+            /* width: 200px;
+            height: 150px; */
+            background-color: lime;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%) ;
+            left: 50%;
+            padding: 5%;
+            /* transition-property: all;
+            transition-duration: 0.5s;
+            transition-timing-function: ease;
+            transition-delay: 1s; */
+            transition: all 0.5s ease 1s;
+        }
+        .center:hover {
+            background-color: #fff;
+            transform: scale(1.2);
+        }
+        .center:active {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="center">
+            Center me
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form lab</title>
+    <style>
+        form {
+            margin-left: 8px ;
+            background-color: aquamarine;
+            padding: 16px;
+        }
+        
+        input, select {
+            font-size: 20px;
+            margin-bottom: 8px;
+            padding: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>HTML Form</h1>
+    <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+        <div>
+            <label for="username">Login name </label> <br>
+            <input type="text" placeholder="username" id="username"/> <br>
+            <label>
+                password :
+                <br>
+                <input type="password" placeholder="password"/> <br>
+
+            </label>
+            <input type="submit">
+            <input type="reset">
+        </div>
+    </form>
+    <hr>
+    <p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label><br>
+  <input type="radio" id="git" name="fav_language" value="Git" />
+  <label for="git">Git with github</label><br>
+  <label>
+      <input type="radio" name="fav_language" value="React" />
+      React.JS
+  </label><br>
+  <input type="submit">
+</form>
+<hr />
+<form>
+    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+    <label for="vehicle1"> I have a bike</label><br>
+    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+    <label for="vehicle2"> I have a car</label><br>
+    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+    <label for="vehicle3"> I have a boat</label>
+    <br>
+    <input type="submit" value="OK">
+  </form>
+  <hr>
+
+  <form action="https://jkorpela.fi/cgi-bin/echo.cgi">
+    <select name="month" >
+        <option value="1">January</option>
+        <option value="2">February</option>
+        <option value="3">March</option>
+        <option value="4">April</option>
+        <option value="5">May</option>
+        <option value="6">June</option>
+        <option value="7">July</option>
+        <option value="aug">August</option>
+        <option value="9">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+      <input type="submit">
+  </form>
+</body>
+</html>

@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+header {
+    background-attachment: salmon;
+    padding: 10px;
+    overflow: hidden;
+}
+.logo {
+    float : left;
+    background-color: deeppink ; 
+    width: 5cm;
+}
+
+nav {
+    float: right;
+    margin-right: 16px;
+    margin-top: 0;
+}
+
+main {
+    /* width: 1300px; */
+    margin: auto;
+    background-color: aquamarine;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.card {
+    /* display: inline-block; */
+    /* border: 2px solid deeppink; */
+    box-shadow: 8px 10px 20px -7px rgba(16,60,217,0.77);
+    width: 300px;
+    margin: 5px;
+}
+img {
+    width: 100%;
+}
+.container {
+    text-align: center;
+    font-size: larger;
+    color: blue;
+}

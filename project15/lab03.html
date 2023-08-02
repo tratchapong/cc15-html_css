@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animatio</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        h1 {
+            color: red;
+            width: fit-content;
+            animation-name: move1;
+            animation-duration: 2s;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            animation-delay: 3ms;
+        }
+
+        h1:hover {
+            animation : move1 2s ease infinite alternate 3s;
+        }
+
+        @keyframes move1 {
+            0% {
+                background-color: violet;
+            }
+            50% {
+                background-color: deeppink;
+                transform: translateX(50%);
+            }
+            100% {
+                background-color: lime;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Codecamp 15</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero assumenda ullam aspernatur id est magnam, esse officia autem voluptatibus molestiae voluptate harum facere cumque modi repellat quibusdam obcaecati distinctio. Accusantium?</p>
+    </main>
+</body>
+</html>

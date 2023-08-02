@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex : Pattern</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .container {
+            min-height: 400px;
+            padding: 16px;
+            background-color: violet;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .container > *:nth-child(1) {
+            border: dashed lime;
+            flex: 1 1 50%;
+            min-width: 150px;
+        }
+        .container > *:nth-child(2) {
+            border: dashed lime;
+            flex: 1 1 50%;
+            min-width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+    </div>
+</body>
+</html>
